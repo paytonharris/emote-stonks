@@ -32,10 +32,10 @@ model User {
 
 model Emote {
   id         Int          @id @default(autoincrement())
-  emote      String       @unique
+  name       String       @unique
   picture    String
-  usage      EmoteUsage[]
-  Investment Investment[]
+  usages     EmoteUsage[]
+  investments Investment[]
 }
 
 model EmoteUsage {
